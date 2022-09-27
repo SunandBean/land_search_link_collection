@@ -8,18 +8,23 @@
   </head>
   <body>
     <div class="container">
-      <div class="item"><h1>부동산 손품 링크 모음</h1></div>
-      <div class="item">
+      <div class="header"><h1>부동산 손품 링크 모음</h1></div>
+      <div class="analysis">
         <h2>지역 분석</h2>
         <h3>실거래가 조회</h3>
         <a href="https://hogangnono.com/" target="_blank">호갱노노</a>
         <h3>가격 비교 분석</h3>
         <a href="https://asil.kr/asil/index.jsp" target="_blank">아실</a>
         <h3>가격 변화 추이</h3>
-        <a href="https://kbland.kr/" target="_blank">KB 부동산</a>
-        <a href="https://www.reb.or.kr/r-one/main.do" target="_blank"
-          >부동산통계정보 R-ONE</a
-        >
+        <div>
+          <a href="https://kbland.kr/" target="_blank">KB 부동산</a>
+        </div>
+        <div>
+          <a href="https://www.reb.or.kr/r-one/main.do" target="_blank"
+            >부동산통계정보 R-ONE</a
+          >
+        </div>
+
         <h3>수요/입주</h3>
         <a href="https://www.aptgin.com/root_main/" target="_blank"
           >부동산 지인</a
@@ -28,40 +33,110 @@
         <h3>교통 호재</h3>
         <a href="http://frdb2.wo.to/" target="_blank">미래철도 DB</a>
       </div>
-      <div class="item">
+      <div class="search">
         <h2>매물 검색</h2>
         <a href="https://land.naver.com/" target="_blank">네이버 부동산</a>
       </div>
-      <div class="item">
+      <div class="tax">
         <h2>세금 계산</h2>
         <a href="http://xn--989a00af8jnslv3dba.com/" target="_blank"
           >부동산 계산기</a
         >
       </div>
 
-      <div class="item">
+      <div class="market-price">
         <h2>공시가격 조회</h2>
-        <a
-          href="https://www.realtyprice.kr/notice/main/mainBody.htm"
-          target="_blank"
-          >부동산 공시가격 알리미</a
-        >
+        <div><a href="https://kbland.kr/" target="_blank">KB 부동산</a></div>
+        <div>
+          <a
+            href="https://www.realtyprice.kr/notice/main/mainBody.htm"
+            target="_blank"
+            >부동산 공시가격 알리미</a
+          >
+        </div>
       </div>
-      <div class="item">
+      <div class="new">
         <h2>분양 정보</h2>
-        <a href="https://www.r114.com/" target="_blank">부동산 114</a>
-        <a href="http://www.drapt.com/index/" target="_blank">닥터 아파트</a>
+        <div>
+          <a href="https://www.r114.com/" target="_blank">부동산 114</a>
+        </div>
+        <div>
+          <a href="http://www.drapt.com/index/" target="_blank">닥터 아파트</a>
+        </div>
       </div>
 
-      <div class="item">
-        <h2>상가, 오피스텔, 토지</h2>
+      <div class="mall">
+        <h2>상가, 토지</h2>
         <a href="https://www.disco.re/" target="_blank">디스코</a>
+      </div>
+      <div class="visitor">
+        <h2>방문자 수</h2>
       </div>
     </div>
   </body>
   <style>
     .container {
       display: grid;
+      font-family: "맑은 고딕";
+      justify-items: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: minmax(100px, auto);
+    }
+    .header {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      font-family: "맑은 고딕";
+    }
+    .analysis {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 5;
+      text-align: center;
+    }
+    .search {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      text-align: center;
+    }
+    .tax {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      text-align: center;
+    }
+    .market-price {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      text-align: center;
+    }
+    .new {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      text-align: center;
+    }
+    .mall {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      text-align: center;
+    }
+    .visitor {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 6;
+      grid-row-end: 7;
+      text-align: center;
     }
   </style>
 </html>
